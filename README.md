@@ -1,4 +1,4 @@
-# Example project for managing MongoDB Index's.
+# Example Project for Managing MongoDB's Index's
 
 Using the [Migrate](https://github.com/tj/node-migrate) library to demo how to manage index's.
 
@@ -7,8 +7,16 @@ Using the [Migrate](https://github.com/tj/node-migrate) library to demo how to m
 3. Run `npm run up` to apply all the changes.
 4. Run `npm run down -- 1592762974021-example-collection-remove-test-doc.js` to revert the last change.
 
+## Creating a New Migration
 
-To reset / remove Mongo instance:
+1. `npm run create -- name-of-the-migration`.
 
-1. `docker-compose rm -v`
+## Listing Migrations.
+
+1. `npm run list`.
+
+## Reset or Remove Mongo Instance
+
+1. `docker-compose rm -v`.
 2. Delete the `.migrate` file which stores the migrations applied to the database.
+3. `docker-compose up -d` - if you want to start fresh.
