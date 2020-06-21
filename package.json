@@ -1,0 +1,23 @@
+{
+  "name": "mongo-migration-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "migrate create --compiler=\"js:@babel/register\" --template-file=\"./template.js\"",
+    "list": "migrate list --compiler=\"js:@babel/register\"",
+    "up": "migrate up --compiler=\"js:@babel/register\"",
+    "down": "migrate down --compiler=\"js:@babel/register\"",
+    "migrate": "migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/register": "^7.10.3",
+    "migrate": "^1.6.2",
+    "mongodb": "^3.5.9"
+  },
+  "devDependencies": {}
+}

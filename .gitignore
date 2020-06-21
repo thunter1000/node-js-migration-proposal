@@ -1,0 +1,4 @@
+/node_modules
+
+# Isn't normally in the gitignore file.
+/.migrate
